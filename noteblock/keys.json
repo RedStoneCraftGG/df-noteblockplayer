@@ -1,0 +1,585 @@
+{
+  "version": 5,
+  "length": 63,
+  "layers": 63,
+  "tempo": 10.0,
+  "duration": 6.3,
+  "notes": [
+    {
+      "tick": 0,
+      "layer": 0,
+      "instrument": 0,
+      "key": 33,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 1,
+      "layer": 0,
+      "instrument": 0,
+      "key": 34,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 2,
+      "layer": 0,
+      "instrument": 0,
+      "key": 35,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 3,
+      "layer": 0,
+      "instrument": 0,
+      "key": 36,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 4,
+      "layer": 0,
+      "instrument": 0,
+      "key": 37,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 5,
+      "layer": 0,
+      "instrument": 0,
+      "key": 38,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 6,
+      "layer": 0,
+      "instrument": 0,
+      "key": 39,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 7,
+      "layer": 0,
+      "instrument": 0,
+      "key": 40,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 8,
+      "layer": 0,
+      "instrument": 0,
+      "key": 41,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 9,
+      "layer": 0,
+      "instrument": 0,
+      "key": 42,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 10,
+      "layer": 0,
+      "instrument": 0,
+      "key": 43,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 11,
+      "layer": 0,
+      "instrument": 0,
+      "key": 44,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 12,
+      "layer": 0,
+      "instrument": 0,
+      "key": 45,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 13,
+      "layer": 0,
+      "instrument": 0,
+      "key": 46,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 14,
+      "layer": 0,
+      "instrument": 0,
+      "key": 47,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 15,
+      "layer": 0,
+      "instrument": 0,
+      "key": 48,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 16,
+      "layer": 0,
+      "instrument": 0,
+      "key": 49,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 17,
+      "layer": 0,
+      "instrument": 0,
+      "key": 50,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 18,
+      "layer": 0,
+      "instrument": 0,
+      "key": 51,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 19,
+      "layer": 0,
+      "instrument": 0,
+      "key": 52,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 20,
+      "layer": 0,
+      "instrument": 0,
+      "key": 53,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 21,
+      "layer": 0,
+      "instrument": 0,
+      "key": 54,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 22,
+      "layer": 0,
+      "instrument": 0,
+      "key": 55,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 23,
+      "layer": 0,
+      "instrument": 0,
+      "key": 56,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 24,
+      "layer": 0,
+      "instrument": 0,
+      "key": 57,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 25,
+      "layer": 0,
+      "instrument": 0,
+      "key": 58,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 26,
+      "layer": 0,
+      "instrument": 0,
+      "key": 59,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 27,
+      "layer": 0,
+      "instrument": 0,
+      "key": 60,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 28,
+      "layer": 0,
+      "instrument": 0,
+      "key": 61,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 29,
+      "layer": 0,
+      "instrument": 0,
+      "key": 62,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 30,
+      "layer": 0,
+      "instrument": 0,
+      "key": 63,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 31,
+      "layer": 0,
+      "instrument": 0,
+      "key": 64,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 32,
+      "layer": 0,
+      "instrument": 0,
+      "key": 65,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 33,
+      "layer": 0,
+      "instrument": 0,
+      "key": 66,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 34,
+      "layer": 0,
+      "instrument": 0,
+      "key": 67,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 35,
+      "layer": 0,
+      "instrument": 0,
+      "key": 68,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 36,
+      "layer": 0,
+      "instrument": 0,
+      "key": 69,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 37,
+      "layer": 0,
+      "instrument": 0,
+      "key": 70,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 38,
+      "layer": 0,
+      "instrument": 0,
+      "key": 71,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 39,
+      "layer": 0,
+      "instrument": 0,
+      "key": 72,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 40,
+      "layer": 0,
+      "instrument": 0,
+      "key": 73,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 41,
+      "layer": 0,
+      "instrument": 0,
+      "key": 74,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 42,
+      "layer": 0,
+      "instrument": 0,
+      "key": 75,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 43,
+      "layer": 0,
+      "instrument": 0,
+      "key": 32,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 44,
+      "layer": 0,
+      "instrument": 0,
+      "key": 31,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 45,
+      "layer": 0,
+      "instrument": 0,
+      "key": 30,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 46,
+      "layer": 0,
+      "instrument": 0,
+      "key": 29,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 47,
+      "layer": 0,
+      "instrument": 0,
+      "key": 28,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 48,
+      "layer": 0,
+      "instrument": 0,
+      "key": 45,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 49,
+      "layer": 0,
+      "instrument": 0,
+      "key": 45,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 50,
+      "layer": 0,
+      "instrument": 0,
+      "key": 45,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 51,
+      "layer": 0,
+      "instrument": 0,
+      "key": 45,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 52,
+      "layer": 0,
+      "instrument": 0,
+      "key": 45,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 53,
+      "layer": 0,
+      "instrument": 0,
+      "key": 45,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 54,
+      "layer": 0,
+      "instrument": 0,
+      "key": 45,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 55,
+      "layer": 0,
+      "instrument": 0,
+      "key": 45,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 56,
+      "layer": 0,
+      "instrument": 0,
+      "key": 45,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 57,
+      "layer": 0,
+      "instrument": 0,
+      "key": 45,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 58,
+      "layer": 0,
+      "instrument": 0,
+      "key": 45,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 59,
+      "layer": 0,
+      "instrument": 0,
+      "key": 45,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 60,
+      "layer": 0,
+      "instrument": 0,
+      "key": 45,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 61,
+      "layer": 0,
+      "instrument": 0,
+      "key": 45,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 62,
+      "layer": 0,
+      "instrument": 0,
+      "key": 45,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    },
+    {
+      "tick": 63,
+      "layer": 0,
+      "instrument": 0,
+      "key": 45,
+      "velocity": 100,
+      "panning": 100,
+      "pitch": 0
+    }
+  ]
+}
