@@ -269,6 +269,23 @@ func PlayNoteblock(eh *world.EntityHandle, filename string) error {
 	return nil
 }
 
+// StopNoteblock is a helper function to stop the currently playing noteblock song for a player.
+//
+// Accepts player handle (EntityHandle).
+// Returns true if a song was stopped, false if no song was playing.
+//
+// Example usage (from any Go function with *player.Player object `p`):
+//
+//	success := StopNoteblock(p.H())
+//	if success {
+//	    // song stopped
+//	} else {
+//	    // no song was playing
+//	}
+func StopNoteblock(eh *world.EntityHandle) bool {
+	return stopSong(eh)
+}
+
 // --------------- Command Registration ---------------
 
 // init registers all noteblock-related player commands.
