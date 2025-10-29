@@ -1,7 +1,7 @@
 package noteblockplayer
 
 import (
-	"fmt"
+	// "fmt"
 	"math"
 	"sync"
 	"time"
@@ -207,10 +207,10 @@ func playSong(eh *world.EntityHandle, song *Song) {
 				}
 				pitch := pitchKey(note.Key)
 				// For further enhancement: use velocity, custom pitch, and panning as needed.
-				fmt.Printf(
+				/* fmt.Printf(
 					"Tick=%d Layer=%d Instr=%d Key=%d Pitch=%d Vel=%d Pan=%d\n",
 					note.Tick, note.Layer, note.Instrument, note.Key, pitch, note.Velocity, note.Panning,
-				)
+				) */
 				playSoundSelf(eh, sound.Note{
 					Instrument: inst,
 					Pitch:      pitch,
