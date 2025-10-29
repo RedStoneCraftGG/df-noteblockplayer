@@ -37,7 +37,16 @@ if err != nil {
 }
 ```
 
-Currently, there is no `StopNoteblock()` function. I wasn't able to test it due to a Minecraft DNS issue (from 2025-10-29 to 2025-10-30) that prevented me from joining a server. I will add this function once the issue is resolved.
+To stop a song, you can use the `StopNoteblock()` function. You can also use the lower-level `stopSong(eh *world.EntityHandle)` function if needed.
+
+```go
+success := StopNoteblock(p.H())
+if success {
+    // The song was successfully stopped
+} else {
+    // No song was playing
+}
+```
 
 ## Known Issues and Limitations
 
