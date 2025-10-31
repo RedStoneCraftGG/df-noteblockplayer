@@ -1,7 +1,7 @@
 package noteblockplayer
 
 import (
-	// "fmt"
+	"fmt"
 	"math"
 	"sync"
 	"time"
@@ -76,16 +76,15 @@ func (c PlayNoteBlockCmd) Run(src cmd.Source, output *cmd.Output, w *world.Tx) {
 	// If extension is ".nbs" load as NBS, else ".json" or no extension loads as JSON.
 	song, err := flexSongLoader(c.Filename)
 	if err != nil {
-		output.Errorf("Failed to load file: %v", err)
+		fmt.Printf("Failed to load file: %v\n", err)
 		return
 	}
 	p, ok := src.(*player.Player)
 	if ok {
-		output.Printf("Playing %s", c.Filename)
 		go playSong(p.H(), song)
 		return
 	}
-	output.Printf("Song %s loaded, but playback is only supported for players", c.Filename)
+	fmt.Printf("Song %s loaded, but playback is only supported for players", c.Filename)
 }
 
 // StopNoteBlockCmd is the command to stop any currently playing noteblock song for the player.
@@ -98,13 +97,13 @@ func (StopNoteBlockCmd) AllowConsole() bool { return true }
 func (c StopNoteBlockCmd) Run(src cmd.Source, output *cmd.Output, w *world.Tx) {
 	p, ok := src.(*player.Player)
 	if !ok {
-		output.Print("The stopnoteblock command is only valid for players")
+		fmt.Print("The stopnoteblock command is only valid for players")
 		return
 	}
 	if stopSong(p.H()) {
-		output.Print("Song playback stopped")
+		// output.Print("Song playback stopped")
 	} else {
-		output.Print("No song is currently playing")
+		// output.Print("No song is currently playing")
 	}
 }
 
@@ -177,12 +176,6 @@ func playSong(eh *world.EntityHandle, song *Song) {
 	}
 
 	defer func() {
-		_ = eh.ExecWorld(func(_ *world.Tx, ent world.Entity) {
-			pp, ok := ent.(*player.Player)
-			if ok {
-				pp.Message("Song playback finished.")
-			}
-		})
 		stopPlayerMtx.Lock()
 		delete(stopPlayer, eh)
 		stopPlayerMtx.Unlock()
