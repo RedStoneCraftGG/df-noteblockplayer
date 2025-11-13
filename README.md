@@ -2,6 +2,12 @@
 
 A simple Dragonfly-MC plugin that lets players load and play Note Block Studio (.nbs) songs in-game.
 
+# What's New?
+
+- The limitation for note keys below F#3 has been resolved. You can now play low-pitched notes without any problem.
+- You can now control the note volume using the velocity property (see JSON examples).
+- The `PlaySound` method has been updated to use direct packet session writing, allowing packets to be sent directly to the player.
+
 ## Installation
 
 1. Import the package, and make sure there is a `noteblock` folder in your project directory:
@@ -50,5 +56,4 @@ if success {
 
 ## Known Issues and Limitations
 
-- Dragonfly-MC's API does not have volume control yet, so you will hear sounds at their default volume from the resource pack.
-- Pitch is limited: because dragonfly-mc uses an int for pitch control (instead of float), notes below F#3 (key 0) cannot be played and will instead be shifted up to F#4 (key 12). However, all notes above F#5 (key 24) will still play correctly.
+- Playing custom noteblock instruments from resource packs is not yet supported (this feature may be added in a future version).
