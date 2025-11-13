@@ -194,45 +194,86 @@ func playSong(eh *world.EntityHandle, song *Song) {
 		}
 		if notes, found := notesPerTick[tick]; found {
 			for _, note := range notes {
-				inst := sound.Piano()
-				if note.Instrument >= 0 && note.Instrument < len(instrumentSounds) {
-					inst = instrumentSounds[note.Instrument]
-				}
-				pitch := pitchKey(note.Key)
-				// For further enhancement: use velocity, custom pitch, and panning as needed.
-				/* fmt.Printf(
-					"Tick=%d Layer=%d Instr=%d Key=%d Pitch=%d Vel=%d Pan=%d\n",
-					note.Tick, note.Layer, note.Instrument, note.Key, pitch, note.Velocity, note.Panning,
-				) */
-				playSoundSelf(eh, sound.Note{
-					Instrument: inst,
-					Pitch:      pitch,
+				_ = eh.ExecWorld(func(tx *world.Tx, ent world.Entity) {
+					pp, ok := ent.(*player.Player)
+					if !ok {
+						return
+					}
+					pos := pp.Position()
+					instrument := "note.harp"
+					if note.Instrument >= 0 && note.Instrument < len(instrumentSounds) {
+						switch note.Instrument {
+						case 1:
+							instrument = "note.basedrum"
+						case 2:
+							instrument = "note.snare"
+						case 3:
+							instrument = "note.hat"
+						case 4:
+							instrument = "note.bass"
+						case 5:
+							instrument = "note.flute"
+						case 6:
+							instrument = "note.bell"
+						case 7:
+							instrument = "note.guitar"
+						case 8:
+							instrument = "note.chime"
+						case 9:
+							instrument = "note.xylophone"
+						case 10:
+							instrument = "note.iron_xylophone"
+						case 11:
+							instrument = "note.cow_bell"
+						case 12:
+							instrument = "note.didgeridoo"
+						case 13:
+							instrument = "note.bit"
+						case 14:
+							instrument = "note.banjo"
+						case 15:
+							instrument = "note.pling"
+						}
+					}
+					pitch := Floatkey(note.Key)
+					volume := FloatVel(note.Velocity)
+					PacketPlaySound(pp, instrument, pitch, volume, pos)
 				})
 			}
 		}
 	}
 }
 
-// playSoundSelf plays a sound only for the provided player entity (self).
-func playSoundSelf(eh *world.EntityHandle, snd world.Sound) {
-	_ = eh.ExecWorld(func(tx *world.Tx, ent world.Entity) {
-		pp, ok := ent.(*player.Player)
-		if !ok {
-			return
-		}
-		pos := pp.Position()
-		tx.PlaySound(pos, snd)
-	})
-}
-
-// pitchKey calculates the Bedrock note pitch index based on the NBS note key.
+// PitchKey calculates the Bedrock note pitch index based on the NBS note key.
 // Bedrock's base is 33 (F#3).
-func pitchKey(key int) int {
+func PitchKey(key int) int {
 	base := 33 // F#3 is key 33 in Bedrock
 	return key - base
 }
 
-// Pow is a helper to call math.Pow.
+// Bedrock "note" starts at key 33 (F#3). Each +12 is one octave (double freq/float).
+//
+// F#3 = 0.5, F#4 = 1.0, F#5 = 2.0, etc.
+//
+// So, the formulat is: 0.5 * 2^((key-33)/12)
+func Floatkey(key int) float32 {
+	baseKey := 33
+	return float32(0.5 * math.Pow(2, float64(key-baseKey)/12))
+}
+
+// FloatVel converts NBS/JSON note velocity (0-100) to Bedrock/Dragonfly volume [0.0, 1.0].
+// Values below or equal 0 are muted; above 100 are clamped to 1.0
+func FloatVel(val int) float32 {
+	if val <= 0 {
+		return 0
+	}
+	if val >= 100 {
+		return 1.0
+	}
+	return float32(val) / 100.0
+}
+
+// Pow is a helper function alias for math.Pow (for convenience).
 func Pow(base, exp float64) float64 {
 	return math.Pow(base, exp)
 }
